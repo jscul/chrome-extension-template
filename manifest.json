@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Block Site",
+  "version": "1.0",
+  "description": "Better block site extension",
+  "icons": {},
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "run_at": "document_start",
+      "matches": [
+        "https://www.reddit.com/*",
+        "https://www.youtube.com/*"
+      ]
+    }
+  ]
+}
